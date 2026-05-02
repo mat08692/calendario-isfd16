@@ -5,7 +5,13 @@ import os
 from datetime import date, timedelta
 
 # --- CONFIGURACIÓN INSTITUCIONAL ---
-st.set_page_config(page_title="ISFD n° 16 - Calendario Académico", page_icon="🎓", layout="wide")
+# --- CONFIGURACIÓN INSTITUCIONAL ---
+st.set_page_config(
+    page_title="Calendario ISFD n° 16", 
+    page_icon="🎓", 
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 
 CLAVE_DIRECTOR = "calendariomgd26" 
 ARCHIVO_DATOS = "datos_isfd16.csv"
